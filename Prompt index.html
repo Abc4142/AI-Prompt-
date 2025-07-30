@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,6 +135,26 @@
       border-top: 1px solid #ddd;
     }
 
+    /* Hyperlink Button Styling */
+    .hyperlink-button {
+      display: inline-block;
+      background: #4f46e5;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 12px;
+      transition: background 0.3s ease;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .hyperlink-button:hover {
+      background: #3730a3;
+    }
+
     @media (max-width: 768px) {
       header h1 {
         font-size: 2rem;
@@ -171,6 +192,11 @@
         ✅ Blog, Coding, Marketing, Social Media Prompts<br/>
         ✅ Mobile Friendly + SEO Optimised
       </p>
+
+      <!-- Hyperlink Button -->
+      <div style="text-align: center;">
+        <a href="#tool" class="hyperlink-button">🚀 Try the AI Tool Now</a>
+      </div>
     </div>
 
     <!-- Google AdSense Ad -->
@@ -186,8 +212,8 @@
       </script>
     </div>
 
-    <!-- Tool UI -->
-    <div class="tool-section">
+    <!-- Tool Section -->
+    <div class="tool-section" id="tool">
       <label for="category">Choose a prompt category:</label>
       <select id="category">
         <option value="blog">📝 Blog Writing</option>
